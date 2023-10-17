@@ -34983,7 +34983,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   justify-content: center;
 }
 
-.login-page #back{
+/*.login-page #back{
   position: absolute;
   top: 0;
   left: 0;
@@ -34993,7 +34993,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   background-size: cover;
   overflow: hidden;
   z-index: 1;
-}
+}*/
 
 .login-box,
 .register-box {

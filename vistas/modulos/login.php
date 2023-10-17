@@ -1,5 +1,3 @@
-<div id="back">
-</div>
 <div class="login-box">
 
     <div class="login-logo">
@@ -33,7 +31,7 @@
 
                 <div class="input-group mb-3">
 
-                    <input type="password" class="form-control" placeholder="Contraseña" name="inPassword" required>
+                    <input type="password" class="form-control" placeholder="Contraseña" name="ingPassword" required>
 
                     <div class="input-group-append">
 
@@ -64,8 +62,15 @@
                     <!-- /.col -->
                 </div>
 
-            </form>
+                
+                <?php
+                    $login = new ControladorUsuarios();
+                    $login -> ctrIngresoUsuario();
 
+                ?>
+
+            </form>
+          
             <!--<div class="social-auth-links text-center mb-3">
                 <p>- OR -</p>
                 <a href="#" class="btn btn-block btn-primary">
@@ -87,4 +92,6 @@
         <!-- /.login-card-body -->
     </div>
 </div>
+<!--<div id="back">
+</div>-->
 <!-- /.login-box -->
