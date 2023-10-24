@@ -43,7 +43,7 @@
 
       <div class="card-body">
 
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped table-responsive tablas">
 
           <thead>
 
@@ -74,7 +74,7 @@
               <td>2023-10-22 20:30:15</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn badge-warning"><i class="fa fa-pencil"></i></button>
+                  <button class="btn badge-warning"><i class="bi  bi-pencil"></i></button>
                   <button class="btn badge-danger"><i class="fa fa-times"></i></button>
                 </div>
               </td>
