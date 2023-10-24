@@ -116,20 +116,128 @@
 
 <!-- modal para agregar usuario -->
 
-<div class="modal fade" id="modalAgregarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalAgregarUsuario">
+
   <div class="modal-dialog">
+
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
+      <form action="" role="form" method="post" enctype="multipart/form-data">
+
+        <div class="modal-header" style="background: #3c8dbc; color: #fff;">
+
+          <h4 class="modal-title">Agregar Usuario</h4>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+            <span aria-hidden="true">&times;</span>
+
+          </button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <div class="box-body">
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div>
+
+                <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar nombre" required>
+
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <div class="input-group-prepend">
+
+                  <span class="input-group-text"><i class="fa fa-key"></i></span>
+
+                </div>
+
+                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" required>
+
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <div class="input-group-prepend">
+
+                  <span class="input-group-text"><i class="fa fa-lock"></i></span>
+
+                </div>
+
+                <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
+
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <div class="input-group">
+
+                <div class="input-group-prepend">
+
+                  <span class="input-group-text"><i class="fa fa-users"></i></span>
+
+                </div>
+
+
+                <select class="form-control input-lg" name="nuevoPerfil" id="">
+                  <option value="">Seleccionar perfil</option>
+                  <option value="Administrador">Administrador</option>
+                  <option value="Especial">Especial</option>
+                  <option value="Vendedor">Vendedor</option>
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <div class="panel">SUBIR FOTO</div>
+
+              <input type="file" id="nuevaFoto" name="nuevaFoto">
+
+              <p class="help-block">Peso máximo de la foto 200Mb</p>
+
+              <img src="/vistas/img/usuarios/default/perfil.png" class="img-thumbnail" width="100px" alt="perfil">
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer justify-content-between">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+
+          <button type="submit" class="btn btn-primary">Agregar</button>
+
+        </div>
+
+      </form>
+
     </div>
+    <!-- /.modal-content -->
   </div>
+  <!-- /.modal-dialog -->
 </div>
+<!-- /.modal -->
